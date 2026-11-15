@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaisak | جیسک - Mandi Bahauddin</title>
+<meta name="description" content="Discover Jaisak village, its history, famous personalities, culture and community in Punjab, Pakistan.">
+<style>
+/* Color Palette & Base Variables */
+:root {
+  --green: #123d2d;
+  --gold: #d5ad62;
+  --cream: #f7f5ed;
+  --white: #fff;
+  --text: #25352d;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--green);
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--gold);
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 480px;
+  background: linear-gradient(#09251b99, #09251bcc),
+    url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  color: var(--gold);
+}
+
+.hero p {
+  font-size: 19px;
+  margin-top: 12px;
+}
+
+.hero .location {
+  margin-top: 22px;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: var(--gold);
+  color: var(--green);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Main Content Sections */
+section {
+  padding: 65px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  color: var(--green);
+  font-size: 32px;
+}
+
+.section-title p {
+  color: #65736a;
+  margin-top: 8px;
+}
+
+/* Grids & Cards */
+.about-grid, .community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #0000000b;
+}
+
+.card h3 {
+  color: var(--green);
+  margin-bottom: 9px;
+}
+
+/* Key Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.stat {
+  background: var(--green);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 23px;
+  color: var(--gold);
+}
+
+/* Personalities Grid */
+.people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.person {
+  background: white;
+  padding: 18px;
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+}
+
+.person h3 {
+  font-size: 17px;
+  color: var(--green);
+}
+
+.person p {
+  font-size: 13px;
+  color: #718078;
+  margin-top: 5px;
+}
+
+.subheading {
+  color: var(--green);
+  margin: 30px 0 15px;
+  font-size: 23px;
+}
+
+/* Community Section */
+.community {
+  background: #e9eee8;
+}
+
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #d9e3dc;
+}
+
+.notice {
+  margin-top: 25px;
+  background: #fff8e9;
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Header -->
+<header>
+  <div class="logo">JAISAK | جیسک</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#people">Personalities</a>
+    <a href="#community">Community</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+</header>
+
+<!-- Hero Banner -->
+<div class="hero" id="home">
+  <div>
+    <h1>Welcome to Jaisak</h1>
+    <p>Our Village, Our Heritage, Our Pride</p>
+    <div class="location">
+      Tehsil Mandi Bahauddin · District Mandi Bahauddin<br>
+      Punjab, Pakistan
+    </div>
+    <a href="#about" class="btn">Discover Our Village</a>
+  </div>
+</div>
+
+<!-- About Section -->
+<section id="about">
+  <div class="section-title">
+    <h2>About Jaisak</h2>
+    <p>A beautiful village in the heart of Punjab, Pakistan</p>
+  </div>
+  <div class="about-grid">
+    <div class="card">
+      <h3>Location</h3>
+      <p>Jaisak is a village in Tehsil Mandi Bahauddin,
+      District Mandi Bahauddin, Punjab, Pakistan.</p>
+    </div>
+    <div class="card">
+      <h3>Our Culture</h3>
+      <p>Punjabi traditions, hospitality, family values
+      and community relationships are an important
+      part of village life.</p>
+    </div>
+    <div class="card">
+      <h3>Agriculture</h3>
+      <p>Agriculture is an important part of the local
+      economy, with crops including wheat, rice and
+      sugarcane.</p>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>Punjab</strong>Province</div>
+    <div class="stat"><strong>Mandi Bahauddin</strong>District</div>
+    <div class="stat"><strong>Jaisak</strong>Village</div>
+  </div>
+</section>
+
+<!-- History Section -->
+<section id="history">
+  <div class="section-title">
+    <h2>Our History & Heritage</h2>
+    <p>Preserving the identity and traditions of Jaisak</p>
+  </div>
+  <div class="card">
+    <p>Jaisak is part of the historic rural landscape of
+    Mandi Bahauddin district. Its identity is connected
+    with Punjabi culture, agricultural traditions,
+    family heritage and generations of community life.</p>
+    <br>
+    <p>This section is dedicated to collecting old
+    photographs, family histories, local stories,
+    landmarks and memories from village elders.</p>
+  </div>
+</section>
+
+<!-- Famous Personalities Section -->
+<section id="people">
+  <div class="section-title">
+    <h2>Famous Personalities of Jaisak</h2>
+    <p>Recognising people connected with our village</p>
+  </div>
+  <h3 class="subheading">Established Village Personalities</h3>
+  <div class="people" id="established"></div>
+  <h3 class="subheading">New Generation & Community Personalities</h3>
+  <div class="people" id="new-generation"></div>
+  <h3 class="subheading">Education & Public Service</h3>
+  <div class="people" id="education"></div>
+  <div class="notice">
+    Names are compiled from a published village profile
+    and community submissions. Individual achievements
+    and biographies should be verified before publication.
+    Inclusion does not imply a formal ranking.
+  </div>
+</section>
+
+<!-- Community Section -->
+<section class="community" id="community">
+  <div class="section-title">
+    <h2>Jaisak Community</h2>
+    <p>Connecting residents, families and overseas Pakistanis</p>
+  </div>
+  <div class="community-grid">
+    <div class="card">
+      <h3>Community Leadership</h3>
+      <p>Village representatives, local leadership,
+      development initiatives and community decisions.</p>
+    </div>
+    <div class="card">
+      <h3>Education & Youth</h3>
+      <p>Students, graduates, teachers, scholarships
+      and achievements of young people.</p>
+    </div>
+    <div class="card">
+      <h3>Overseas Jaisak</h3>
+      <p>Connecting Jaisak residents living in Australia,
+      United Kingdom, Europe, Middle East and worldwide.</p>
+    </div>
+    <div class="card">
+      <h3>Social Welfare</h3>
+      <p>Charity, healthcare assistance, support for
+      families and community welfare projects.</p>
+    </div>
+    <div class="card">
+      <h3>Village Development</h3>
+      <p>Roads, cleanliness, drinking water,
+      infrastructure and improvement projects.</p>
+    </div>
+    <div class="card">
+      <h3>Culture & Events</h3>
+      <p>Eid celebrations, weddings, religious gatherings,
+      Punjabi traditions and community events.</p>
+    </div>
+    <div class="card">
+      <h3>Local Businesses</h3>
+      <p>Supporting local shops, services,
+      entrepreneurs and village businesses.</p>
+    </div>
+    <div class="card">
+      <h3>Community Directory</h3>
+      <p>A directory of local organisations,
+      useful contacts and community resources.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+  <div class="section-title">
+    <h2>Village Gallery</h2>
+    <p>Memories, landscapes and traditions</p>
+  </div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600" alt="Agricultural landscape">
+    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=600" alt="Sunrise over fields">
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600" alt="Green countryside">
+  </div>
+  <p style="margin-top:20px;text-align:center">
+    Actual photographs of Jaisak can be added here.
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <h2>JAISAK | جیسک</h2>
+  <p>Our Village · Our Heritage · Our Pride</p>
+  <p>Tehsil Mandi Bahauddin, District Mandi Bahauddin,
+  Punjab, Pakistan</p>
+  <p style="margin-top:15px">A community information project</p>
+</footer>
+
+<!-- Dynamic Personality Directory Script -->
+<script>
+// Established Village Personalities
+const established = [
+  "Malik Nasar Awan",
+  "Malik Murtaza Awan",
+  "Malik Azhar Alvi",
+  "Muhammad Anar Ran",
+  "Bahadur Ali Ran",
+  "Muhammad Sultan Ran",
+  "Mehndi Khokhar",
+  "Haji Ashraf Awan",
+  "Ahmed Khan Tarar",
+  "Shahid Alvi",
+  "Zahoor Alvi",
+  "Irfan Alvi",
+  "Muhammad Arif Khokhar",
+  "Muhammad Walayat Khokhar",
+  "Abdul Hameed Awan",
+  "Muhammad Sikander Gujjar",
+  "Nadir Khan Sandhu",
+  "Mumtaz Ahmed Sandhu",
+  "Azhar Hussain",
+  "Mazhar Iqbal"
+];
+
+// New Generation & Community Personalities
+const newGeneration = [
+  "Usama Azhar Sandhu",
+  "Zunair Iqbal Sandhu",
+  "Muhammad Irtiza Sandhu",
+  "Moiez Azhar Sandhu",
+  "Zohaib Iqbal Sandhu",
+  "Ali Abdullah",
+  "Ramish Azhar Sandhu",
+  "Umair Sandhu",
+  "Adeel Sandhu",
+  "Waleed Alvi",
+  "Qasim Waqar",
+  "Muhammad Sameer Supra",
+  "Touseef Supra",
+  "Adnan Nasar Alvi",
+  "Fakhar Ali Alvi",
+  "Adil Abbas Ran",
+  "Usman Ali Alvi"
+];
+
+// Education & Public Service Personalities
+const education = [
+  "Suqlain Haider Jawad",
+  "Muhammad Arshad",
+  "Waseem Feroze",
+  "Babar Ali Ran",
+  "Adeel Khokhar",
+  "Hafiz Junaid",
+  "Kamran Kharal",
+  "Qaisar Sindhu",
+  "Raheel Alvi",
+  "Muhammad Azeem Azam",
+  "Aqeel Khokhar",
+  "Muhammad Pervaiz Ran",
+  "Muhammad Javed"
+];
+
+/**
+ * Renders personality cards into the target container element.
+ * @param {string[]} names - Array of names to render.
+ * @param {string} target - ID of the container element.
+ */
+function addPeople(names, target) {
+  const container = document.getElementById(target);
+  if (!container) return;
+
+  names.forEach(name => {
+    const article = document.createElement("article");
+    article.className = "person";
+
+    const heading = document.createElement("h3");
+    heading.textContent = name;
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent =
+      "Listed in the Jaisak community directory. Biography and achievements to be confirmed.";
+
+    article.appendChild(heading);
+    article.appendChild(paragraph);
+    container.appendChild(article);
+  });
+}
+
+// Initialize all personality sections
+addPeople(established, "established");
+addPeople(newGeneration, "new-generation");
+addPeople(education, "education");
+</script>
+
+</body>
+</html>
